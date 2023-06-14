@@ -1,0 +1,103 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "verbo",
+              "type": "verbo"
+            },
+            {
+              "name": "valor",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "ChTopic",
+          "samples": [
+            "Haz que {valor} sea el nuevo valor del topico",
+            "Quiero que {valor} sea el nuevo valor del topico",
+            "{verbo} el valor a {valor}",
+            "el valor del topico {verbo} para que sea {valor}",
+            "{verbo} el valor del topico a {valor}",
+            "{verbo} el topico a {valor}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "RdTopicIntent",
+          "samples": [
+            "Di me el valor del topico test topic",
+            "Di me el valor del topico",
+            "Dime el valor del topico",
+            "Di el valor del topico test topic",
+            "Di el valor del topico",
+            "Da me el valor del topico test topic",
+            "Da me el valor del topico",
+            "Dame el valor del topico test topic",
+            "Proporciona el valor del topico",
+            "Dame el valor del topico"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Convierte"
+              }
+            },
+            {
+              "name": {
+                "value": "Reasigna"
+              }
+            },
+            {
+              "name": {
+                "value": "Muta "
+              }
+            },
+            {
+              "name": {
+                "value": "Ajusta"
+              }
+            },
+            {
+              "name": {
+                "value": "Modifica"
+              }
+            },
+            {
+              "name": {
+                "value": "Cambia"
+              }
+            }
+          ],
+          "name": "verbo"
+        }
+      ],
+      "invocationName": "cidesi test"
+    }
+  }
+}

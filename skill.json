@@ -1,0 +1,83 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-MX": {
+          "summary": "Test para el broker mqtt",
+          "examplePhrases": [
+            "Alexa, abre cidesi test"
+          ],
+          "keywords": [
+            "iot",
+            "alexa",
+            "smart",
+            "home",
+            "test"
+          ],
+          "name": "mqtt cidesi test",
+          "description": "You know it",
+          "smallIconUri": "file://assets/images/es-MX_smallIconUri.png",
+          "updatesDescription": "Nothing yet",
+          "largeIconUri": "file://assets/images/es-MX_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Echo, abre Cidesi test\"}",
+      "category": "SMART_HOME",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:035545521347:function:219bc6f8-80e9-4a00-b42a-05470547081a:Release_0"
+        },
+        "interfaces": [],
+        "locales": {},
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:035545521347:function:219bc6f8-80e9-4a00-b42a-05470547081a:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:035545521347:function:219bc6f8-80e9-4a00-b42a-05470547081a:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:035545521347:function:219bc6f8-80e9-4a00-b42a-05470547081a:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::person_id:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "es-MX": {
+          "termsOfUseUrl": "https://s3.amazonaws.com/assets.whyamisinglethegame.com/policy/index.html",
+          "privacyPolicyUrl": "https://oxnkeen.com/privacy-policy-alexa-skills/"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
